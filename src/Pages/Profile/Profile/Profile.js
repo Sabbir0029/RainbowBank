@@ -11,9 +11,6 @@ const Profile = () => {
             {admin &&
                 <Link to='/MakeAdmin' className='menu'>Make Admin</Link>
                 }
-            
-                <Link to='/MakeAdmin' className='menu'>Make Admin</Link>
-                
             <Button onClick={logOut}>Log Out</Button>
         </div>
     );
