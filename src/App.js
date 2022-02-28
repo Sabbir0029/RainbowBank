@@ -9,6 +9,7 @@ import Profile from './Pages/Profile/Profile/Profile';
 import PrivateRoute from './Pages/Authentication/PrivateRoute/PrivateRoute';
 import MakeAdmin from './Pages/Profile/MakeAdmin/MakeAdmin';
 import AdminRoute from './Pages/Authentication/AdminRoute/AdminRoute';
+import ClientApproved from './Pages/ClientApproved/ClientApproved';
 
 function App() {
   return (
@@ -27,6 +28,9 @@ function App() {
         </PrivateRoute>
         <AdminRoute path='/MakeAdmin'>
           <MakeAdmin></MakeAdmin>
+        </AdminRoute>
+        <AdminRoute path='/ClientApproved'>
+          <ClientApproved></ClientApproved>
         </AdminRoute>
         <Route path='/login'>
           <Login></Login>

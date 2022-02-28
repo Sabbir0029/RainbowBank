@@ -1,17 +1,13 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
-import useAuth from '../../../Hooks/useAuth';
+import Navigation from '../../../Shared/Navigation/Navigation';
 
 const Profile = () => {
-    const {logOut,admin} = useAuth();
+
     return (
         <div>
+            <Navigation></Navigation>
             <h1>this is Profile</h1>
-            {admin &&
-                <Link to='/MakeAdmin' className='menu'>Make Admin</Link>
-                }
-            <Button onClick={logOut}>Log Out</Button>
+            
         </div>
     );
 };

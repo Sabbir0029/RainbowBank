@@ -13,6 +13,7 @@ const Register = () => {
         const value = e.target.value;
         const newData = {...loginData}
         newData[field] = value;
+        console.log(newData)
         setLoginDate(newData)
     }
     const handelSubmitBtn = e =>{
@@ -34,6 +35,13 @@ const Register = () => {
                 </Alert>
               ))}
              { !isLoading && <form onSubmit={handelSubmitBtn}>
+                <input 
+                className='w-50 m-3 text-dark '
+                placeholder="Your Name"
+                name='displayName'
+                type='text'
+                onBlur={handelOnBlur}
+                ></input> <br></br>
                 <input 
                 className='w-50 text-dark '
                 placeholder="Your Email"

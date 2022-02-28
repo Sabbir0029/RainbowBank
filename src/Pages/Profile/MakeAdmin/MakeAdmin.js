@@ -1,5 +1,6 @@
 import { Alert, Button } from 'react-bootstrap';
 import React, { useState } from 'react';
+import Navigation from '../../../Shared/Navigation/Navigation';
 
 const MakeAdmin = () => {
     const [email, setEmail]= useState('');
@@ -28,7 +29,8 @@ const MakeAdmin = () => {
     }
     return (
         <div className='dashboard'>
-            <h1 className='text-dark mb-4 fw-bold fst-italic pt-5'>Make Admin</h1>
+             <Navigation></Navigation>
+            <h1 className='text-dark mb-4 mt-5 fw-bold fst-italic pt-5'>Make Admin</h1>
             {admin && [
                 'success',
               ].map((variant, idx) => (
