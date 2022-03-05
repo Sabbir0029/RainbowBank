@@ -23,7 +23,7 @@ const Navigation = () => {
                 <Nav.Link as={Link}  to="/ClientApproved" className='text-dark fw-bold fst-italic'>Client Approved</Nav.Link>
                 }
                  </Nav>
-                 <Nav className="me-4">
+                 <Nav>
                    {
                      user?.email? 
                      <Button variant="light" className='text-dark fw-bold fst-italic' onClick={logOut}>LogOut</Button>
@@ -35,7 +35,7 @@ const Navigation = () => {
       <img src={user.photoURL} className='photo ms-3 rounded-circle'/>:
                 <img src={photo} alt=""/>
             }
-            <p className='text-dark fw-bold fst-italic'>{user.displayName}</p>
+            {/* <p className='text-dark fw-bold fst-italic'>{user.displayName}</p> */}
             </div>
                  </Nav>
                </Navbar.Collapse>

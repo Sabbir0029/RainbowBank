@@ -20,7 +20,6 @@ const Login = () => {
         const newData = {...loginData}
         newData[field] = value;
         setLoginDate(newData)
-        console.log(newData)
     }
     const handelSubmitBtn = e =>{
         loginUser(loginData.email, loginData.password, location, history )

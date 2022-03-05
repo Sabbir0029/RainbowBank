@@ -6,7 +6,7 @@ const Profile = () => {
     return (
         <div>
             <Navigation></Navigation>
-            <h1>this is Profile</h1>
+            <h1 className='mt-5 pt-5'>This is Profile</h1>
             
         </div>
     );
